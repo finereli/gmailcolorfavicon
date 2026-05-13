@@ -36,6 +36,8 @@ observer.observe(document.head, {
   attributes: true
 });
 
+changeFavicon(null, currentColor);
+
 function scrapeEmailAddressFromPage() {
   var accountElement = document.querySelector(".gb_b.gb_Ra.gb_R");
   if (accountElement) {
